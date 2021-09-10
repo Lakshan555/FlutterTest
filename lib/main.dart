@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
 
       body: Center(
         child: Image(
-          image: NetworkImage('https://cdn.wallpapersafari.com/70/19/avoxry.jpg'),
+          image: AssetImage('assets/1.jpg'),
         )
       ),
 
