@@ -15,9 +15,10 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
       ),
 
-      body: Padding(
-        padding: EdgeInsets.all(50.0),
-        child: Text('Hello'),
+      body: Center(
+        child: Image(
+          image: NetworkImage('https://cdn.wallpapersafari.com/70/19/avoxry.jpg'),
+        )
       ),
 
       floatingActionButton: FloatingActionButton(
@@ -29,3 +30,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
