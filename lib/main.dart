@@ -16,9 +16,12 @@ class Home extends StatelessWidget {
       ),
 
       body: Center(
-        child: Image(
-          image: AssetImage('assets/1.jpg'),
-        )
+        child: Icon(
+          Icons.airline_seat_recline_normal,
+          size: 50,
+          color: Colors.blue,
+
+        ),
       ),
 
       floatingActionButton: FloatingActionButton(
