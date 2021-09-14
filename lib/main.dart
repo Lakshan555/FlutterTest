@@ -16,7 +16,16 @@ class Home extends StatelessWidget {
       ),
 
       body:Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+
         children: [
+          Row(
+            children: [
+              Text('hello'),
+              Text("world")
+            ],
+          ),
           Container(
             padding: EdgeInsets.all(20),
             color: Colors.cyan,
@@ -24,6 +33,7 @@ class Home extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(30),
+
             color: Colors.pinkAccent,
             child: Text('two'),
           ),
