@@ -15,12 +15,10 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
       ),
 
-      body: Container(
-        padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
-        margin: EdgeInsets.all(150.0),
-        color: Colors.grey[400],
+      body: Padding(
+        padding: EdgeInsets.all(30.0),
         child: Text('Hello'),
-      ),
+        ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
