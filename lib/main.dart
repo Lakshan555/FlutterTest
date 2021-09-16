@@ -15,9 +15,40 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
       ),
 
-      body: Padding(
-        padding: EdgeInsets.all(50.0),
-        child: Text('Hello'),
+      body:Row(
+      
+        children: [
+          Expanded(child: Image.asset('assets/1.jpg')),
+          Expanded(
+            flex: 3,
+            child: Container(
+              height: 75,
+              child:RaisedButton.icon(
+                 onPressed: (){},
+                 icon:Icon(
+                   Icons.mail,
+                 ),
+                 label: Text('Mail'),
+                color: Colors.green,
+
+              ) ,
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          ),
+
+        ],
       ),
 
       floatingActionButton: FloatingActionButton(
@@ -29,3 +60,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
