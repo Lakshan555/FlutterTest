@@ -16,10 +16,9 @@ class Home extends StatelessWidget {
       ),
 
       body:Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      
         children: [
-          Column(),
+          Expanded(child: Image.asset('assets/1.jpg')),
           Expanded(
             flex: 3,
             child: Container(
