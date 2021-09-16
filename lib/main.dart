@@ -15,33 +15,46 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
       ),
 
-      body:Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
-
+      body:Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Text('hello'),
-              Text("world")
-            ],
-          ),
-          Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.cyan,
-            child: Text('one'),
-          ),
-          Container(
-            padding: EdgeInsets.all(30),
+          Column(),
+          Expanded(
+            child: Container(
+              height: 75,
+              child:RaisedButton.icon(
+                 onPressed: (){},
+                 icon:Icon(
+                   Icons.mail,
+                 ),
+                 label: Text('Mail'),
+                color: Colors.green,
 
-            color: Colors.pinkAccent,
-            child: Text('two'),
+              ) ,
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40),
-            color: Colors.amber,
-            child: Text('Three'),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),),
           ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.green,
+              child: Text('3'),
+            ),
+          ),
+
 
         ],
       ),
