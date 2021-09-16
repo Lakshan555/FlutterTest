@@ -21,6 +21,7 @@ class Home extends StatelessWidget {
         children: [
           Column(),
           Expanded(
+            flex: 3,
             child: Container(
               height: 75,
               child:RaisedButton.icon(
@@ -47,14 +48,6 @@ class Home extends StatelessWidget {
               child: Text('3'),
             ),
           ),
-          Expanded(
-            child: Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.green,
-              child: Text('3'),
-            ),
-          ),
-
 
         ],
       ),
